@@ -24,7 +24,7 @@ class Account:  # outer -> class
 
     # 출금하기 : setter
     def setWithdraw(self, money):
-        if self.balance < money:
+        if self.__balance < money:
             print('잔액 부족')
             return  # 함수 종료(exit)
         self.__balance -= money
